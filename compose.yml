@@ -1,0 +1,8 @@
+services:
+  apache:
+    image: httpd
+    container_name: apache
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+    ports:
+      - 8888:80
